@@ -2,77 +2,90 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio de Lorenzo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #0f172a;
-            color: #e2e8f0;
-        }
-        header {
-            background-color: #1e293b;
-            padding: 40px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        section {
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .card {
-            background-color: #1e293b;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Lorenzo León</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-<header>
-    <h1>👨‍💻 Lorenzo León</h1>
-    <p>Estudiante de 2º de ASIR | Sistemas, Redes y Ciberseguridad</p>
-</header>
+    <header>
+        <div class="container hero">
+            <div class="hero-text">
+                <h1>Lorenzo León</h1>
+                <p class="subtitle">Estudiante de 2º de ASIR | Sistemas, Redes y Ciberseguridad</p>
+                <p>
+                    Soy estudiante de Administración de Sistemas Informáticos en Red (ASIR) con interés en
+                    redes, administración de sistemas Linux y ciberseguridad. Me gusta aprender mediante
+                    laboratorios prácticos y proyectos técnicos enfocados en entornos reales.
+                </p>
+            </div>
 
-<section>
-    <h2>🚀 Sobre mí</h2>
-    <div class="card">
-        <p>Soy estudiante de Administración de Sistemas Informáticos en Red (ASIR), con interés en redes, seguridad y sistemas Linux. Me gusta aprender haciendo proyectos prácticos y mejorar mis habilidades técnicas cada día.</p>
-    </div>
+            <div class="hero-photo">
+                <img src="foto-lorenzo.jpg" alt="Foto de Lorenzo León">
+            </div>
+        </div>
+    </header>
 
-    <h2>📂 Proyectos</h2>
+    <main class="container">
 
-    <div class="card">
-    <h3>🌐 Enrutamiento dinámico OSPF en IPv4</h3>
-    <p>Diseño y configuración de una red con múltiples routers utilizando el protocolo OSPF. 
-    Configuración de router-id, propagación de rutas dinámicas y verificación de conectividad entre redes.</p>
-    <a href="https://github.com/lorenzolt-prmths/ospf-ipv4" target="_blank">Ver proyecto</a>
-    </div>
+        <section>
+            <h2>Sobre mí</h2>
+            <div class="card">
+                <p>
+                    Actualmente estoy formándome en administración de sistemas, routing, redes IPv4/IPv6,
+                    servicios de red y seguridad. En este portfolio recopilo proyectos y prácticas con los que
+                    demuestro mis conocimientos y mi evolución técnica.
+                </p>
+            </div>
+        </section>
 
-    <div class="card">
-        <h3>🔐 VPN y Firewall</h3>
-        <p>Implementación de red segura con VPN y control de tráfico mediante firewall.</p>
-    </div>
+        <section>
+            <h2>Proyectos</h2>
 
-    <div class="card">
-        <h3>💻 Aplicaciones Web</h3>
-        <p>Proyectos en HTML, CSS y JavaScript usando DOM y eventos.</p>
-    </div>
+            <div class="card">
+                <h3>Enrutamiento dinámico OSPF en IPv4</h3>
+                <p>
+                    Diseño y configuración de una red con múltiples routers utilizando el protocolo OSPF.
+                    Se ha configurado router-id, propagación de rutas dinámicas y verificación de conectividad
+                    entre redes mediante pruebas prácticas.
+                </p>
+                <p class="tech"><strong>Tecnologías:</strong> Cisco Packet Tracer, OSPF, IPv4, Routing</p>
+                <a class="button" href="https://github.com/lorenzolt-prmths/ospf-ipv4" target="_blank">Ver proyecto</a>
+            </div>
 
-    <h2>📫 Contacto</h2>
-    <div class="card">
-        <p>Email: lorenzolt@me.com</p>
-    </div>
-</section>
+            <div class="card">
+                <h3>VPN y Firewall</h3>
+                <p>
+                    Implementación de una red segura mediante VPN y control del tráfico a través de firewall,
+                    aplicando conceptos de seguridad y segmentación de red.
+                </p>
+                <p class="tech"><strong>Tecnologías:</strong> Cisco Packet Tracer, VPN, Firewall, Seguridad de red</p>
+            </div>
+
+            <div class="card">
+                <h3>Aplicaciones Web</h3>
+                <p>
+                    Desarrollo de prácticas y pequeños proyectos web con HTML, CSS y JavaScript, utilizando
+                    manipulación del DOM, eventos y estructura de interfaz.
+                </p>
+                <p class="tech"><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <div class="card contact-box">
+                <p><strong>Email:</strong> <a href="mailto:lorenzolt@me.com">lorenzolt@me.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/lorenzolt-prmths" target="_blank">github.com/lorenzolt-prmths</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Lorenzo León · Portfolio personal
+    </footer>
 
 </body>
 </html>
