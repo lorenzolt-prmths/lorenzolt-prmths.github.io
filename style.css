@@ -213,13 +213,6 @@ footer {
     .hero-text h1 {
         font-size: 2.1rem;
     }
-    .project-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #1f2937;
-}
+ 
+
 }   
