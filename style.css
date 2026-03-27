@@ -213,6 +213,19 @@ footer {
     .hero-text h1 {
         font-size: 2.1rem;
     }
+        .category {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.category:hover {
+    transform: scale(1.02);
+}
+
+.projects-list {
+    display: none;
+    margin-bottom: 20px;
+}
  
 
 }   
