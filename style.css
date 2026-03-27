@@ -121,6 +121,7 @@ h2 {
     padding: 24px;
     margin-bottom: 20px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.20);
+    overflow: hidden;
 }
 
 .card h3 {
@@ -214,7 +215,11 @@ footer {
     }
     .project-img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px;
     margin-bottom: 15px;
+    border: 1px solid #1f2937;
 }
 }   
