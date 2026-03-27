@@ -1,9 +1,11 @@
 function toggleCategory(id) {
-    const section = document.getElementById(id);
+    const sections = document.querySelectorAll('.projects-list');
 
-    if (section.style.display === "block") {
-        section.style.display = "none";
-    } else {
-        section.style.display = "block";
-    }
+    sections.forEach(section => {
+        if (section.id === id) {
+            section.style.display = section.style.display === "block" ? "none" : "block";
+        } else {
+            section.style.display = "none";
+        }
+    });
 }
