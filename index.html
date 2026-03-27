@@ -50,60 +50,60 @@
                 </p>
             </div>
         </section>
-
         <section id="proyectos">
-            <h2>Proyectos</h2>
+    <h2>Proyectos</h2>
 
-            <div class="card">
-                <h3>Enrutamiento dinámico OSPF en IPv4</h3>
-                <p>
-                    Diseño y configuración de una red con múltiples routers utilizando el protocolo OSPF.
-                    Se ha configurado router-id, propagación de rutas dinámicas y verificación de conectividad
-                    entre redes mediante pruebas prácticas.
-                </p>
-                <p class="tech"><strong>Tecnologías:</strong> Cisco Packet Tracer, OSPF, IPv4, Routing</p>
-                <a class="button" href="https://github.com/lorenzolt-prmths/ospf-ipv4" target="_blank">Ver proyecto</a>
-            </div>
-            <div class="card">
-                
+    <!-- REDES -->
+    <div class="card category" onclick="toggleCategory('redes')">
+        <h3>🌐 Redes</h3>
+        <p>Routing, IPv4, IPv6, VLAN, VPN, Firewall</p>
+    </div>
 
-    <h3>Enrutamiento IPv6 por alias</h3>
-    <p>
-        Configuración de enrutamiento IPv6 en una red con múltiples routers utilizando direcciones
-        link-local como siguiente salto (enrutamiento por alias). Se ha verificado la conectividad
-        mediante tabla de rutas, ping y traceroute.
-    </p>
-    <p class="tech"><strong>Tecnologías:</strong> Cisco Packet Tracer, IPv6, Routing, Redes</p>
-    <a class="button" href="https://github.com/lorenzolt-prmths/ipv6-routing" target="_blank">Ver proyecto</a>
-</div>
-            <div class="card">
-    <h3>Sumarización de rutas IPv6</h3>
-    <p>
-        Configuración de sumarización de rutas IPv6 para reducir el tamaño de la tabla de routing
-        y optimizar el enrutamiento entre routers en una red IPv6.
-    </p>
-    <p class="tech"><strong>Tecnologías:</strong> Cisco Packet Tracer, IPv6, Routing, Sumarización</p>
-    <a class="button" href="https://github.com/lorenzolt-prmths/ipv6-summarization" target="_blank">Ver proyecto</a>
-</div>
+    <div id="redes" class="projects-list">
+        <div class="card">
+            <h3>Enrutamiento dinámico OSPF en IPv4</h3>
+            <a class="button" href="https://github.com/lorenzolt-prmths/ospf-ipv4" target="_blank">Ver proyecto</a>
+        </div>
 
-            <div class="card">
-                <h3>VPN y Firewall</h3>
-                <p>
-                    Implementación de una red segura mediante VPN y control del tráfico a través de firewall,
-                    aplicando conceptos de seguridad y segmentación de red.
-                </p>
-                <p class="tech"><strong>Tecnologías:</strong> Cisco Packet Tracer, VPN, Firewall, Seguridad de red</p>
-            </div>
+        <div class="card">
+            <h3>Enrutamiento IPv6 por alias</h3>
+            <a class="button" href="https://github.com/lorenzolt-prmths/ipv6-routing" target="_blank">Ver proyecto</a>
+        </div>
 
-            <div class="card">
-                <h3>Aplicaciones Web</h3>
-                <p>
-                    Desarrollo de prácticas y pequeños proyectos web con HTML, CSS y JavaScript, utilizando
-                    manipulación del DOM, eventos y estructura de interfaz.
-                </p>
-                <p class="tech"><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
-            </div>
-        </section>
+        <div class="card">
+            <h3>Sumarización de rutas IPv6</h3>
+            <a class="button" href="https://github.com/lorenzolt-prmths/ipv6-summarization" target="_blank">Ver proyecto</a>
+        </div>
+    </div>
+
+    <!-- SISTEMAS -->
+    <div class="card category" onclick="toggleCategory('sistemas')">
+        <h3>🖥️ Sistemas</h3>
+        <p>Linux, servidores, servicios de red</p>
+    </div>
+
+    <div id="sistemas" class="projects-list">
+        <div class="card">
+            <h3>Servidor Linux</h3>
+            <p>Configuración de servicios en Linux</p>
+        </div>
+    </div>
+
+    <!-- WEB -->
+    <div class="card category" onclick="toggleCategory('web')">
+        <h3>💻 Web</h3>
+        <p>HTML, CSS, JavaScript</p>
+    </div>
+
+    <div id="web" class="projects-list">
+        <div class="card">
+            <h3>Portfolio personal</h3>
+        </div>
+    </div>
+
+</section>
+
+        
 
         <section id="contacto">
             <h2>Contacto</h2>
