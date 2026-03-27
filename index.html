@@ -50,57 +50,91 @@
                 </p>
             </div>
         </section>
+
         <section id="proyectos">
     <h2>Proyectos</h2>
 
-    <!-- REDES -->
-    <div class="card category" onclick="toggleCategory('redes')">
-        <h3>🌐 Redes</h3>
-        <p>Routing, IPv4, IPv6, VLAN, VPN, Firewall</p>
+    <div class="categories-grid">
+        <div class="card category" onclick="toggleCategory('redes')">
+            <h3>🌐 Redes</h3>
+            <p>Routing, IPv4, IPv6, VLAN, VPN y Firewall</p>
+        </div>
+
+        <div class="card category" onclick="toggleCategory('sistemas')">
+            <h3>🖥️ Sistemas</h3>
+            <p>Linux, servidores, servicios de red y automatización</p>
+        </div>
+
+        <div class="card category" onclick="toggleCategory('web')">
+            <h3>💻 Web</h3>
+            <p>HTML, CSS, JavaScript y proyectos de interfaz</p>
+        </div>
+
+        <div class="card category" onclick="toggleCategory('otros')">
+            <h3>⚙️ Otros</h3>
+            <p>Más proyectos técnicos y prácticas complementarias</p>
+        </div>
     </div>
 
     <div id="redes" class="projects-list">
         <div class="card">
             <h3>Enrutamiento dinámico OSPF en IPv4</h3>
+            <p>
+                Configuración de red con múltiples routers utilizando el protocolo OSPF.
+                Se ha verificado la conectividad entre redes y la propagación de rutas dinámicas.
+            </p>
+            <p class="tech"><strong>Tecnologías:</strong> Cisco Packet Tracer, OSPF, IPv4, Routing</p>
             <a class="button" href="https://github.com/lorenzolt-prmths/ospf-ipv4" target="_blank">Ver proyecto</a>
         </div>
 
         <div class="card">
             <h3>Enrutamiento IPv6 por alias</h3>
+            <p>
+                Configuración de enrutamiento IPv6 utilizando direcciones link-local
+                como siguiente salto entre routers.
+            </p>
+            <p class="tech"><strong>Tecnologías:</strong> Cisco Packet Tracer, IPv6, Routing</p>
             <a class="button" href="https://github.com/lorenzolt-prmths/ipv6-routing" target="_blank">Ver proyecto</a>
         </div>
 
         <div class="card">
             <h3>Sumarización de rutas IPv6</h3>
+            <p>
+                Aplicación de sumarización de rutas IPv6 para reducir el tamaño
+                de la tabla de routing y optimizar el enrutamiento.
+            </p>
+            <p class="tech"><strong>Tecnologías:</strong> Cisco Packet Tracer, IPv6, Sumarización</p>
             <a class="button" href="https://github.com/lorenzolt-prmths/ipv6-summarization" target="_blank">Ver proyecto</a>
         </div>
-    </div>
-
-    <!-- SISTEMAS -->
-    <div class="card category" onclick="toggleCategory('sistemas')">
-        <h3>🖥️ Sistemas</h3>
-        <p>Linux, servidores, servicios de red</p>
     </div>
 
     <div id="sistemas" class="projects-list">
         <div class="card">
             <h3>Servidor Linux</h3>
-            <p>Configuración de servicios en Linux</p>
+            <p>
+                Configuración de servicios y administración básica de sistemas Linux.
+            </p>
         </div>
-    </div>
-
-    <!-- WEB -->
-    <div class="card category" onclick="toggleCategory('web')">
-        <h3>💻 Web</h3>
-        <p>HTML, CSS, JavaScript</p>
     </div>
 
     <div id="web" class="projects-list">
         <div class="card">
             <h3>Portfolio personal</h3>
+            <p>
+                Desarrollo de una web personal para presentar proyectos, formación
+                y habilidades técnicas.
+            </p>
         </div>
     </div>
 
+    <div id="otros" class="projects-list">
+        <div class="card">
+            <h3>Próximamente</h3>
+            <p>
+                Nuevos proyectos técnicos en preparación.
+            </p>
+        </div>
+    </div>
 </section>
 
         
