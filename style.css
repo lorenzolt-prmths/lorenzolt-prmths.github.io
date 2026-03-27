@@ -212,4 +212,9 @@ footer {
     .hero-text h1 {
         font-size: 2.1rem;
     }
+    .project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 }   
