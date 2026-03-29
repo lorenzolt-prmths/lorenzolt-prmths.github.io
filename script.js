@@ -1,11 +1,14 @@
-function toggleCategory(id) {
-    const sections = document.querySelectorAll('.projects-list');
+function toggleCategory(categoryId) {
+    const lists = document.querySelectorAll('.projects-list');
+    lists.forEach(list => {
+        list.style.display = 'none';
+    });
 
-    sections.forEach(section => {
-        if (section.id === id) {
-            section.style.display = section.style.display === "block" ? "none" : "block";
-        } else {
-            section.style.display = "none";
-        }
+    const selected = document.getElementById(categoryId);
+    selected.style.display = 'block';
+
+    window.scrollTo({
+        top: selected.offsetTop - 80,
+        behavior: 'smooth'
     });
 }
