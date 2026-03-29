@@ -1,16 +1,20 @@
 function toggleCategory(categoryId) {
-    // Ocultar todas las listas
     const lists = document.querySelectorAll('.projects-list');
+
+    // Ocultar todas
     lists.forEach(list => {
         list.style.display = 'none';
     });
 
-    // Mostrar la lista seleccionada
+    // Mostrar la seleccionada
     const selected = document.getElementById(categoryId);
     selected.style.display = 'block';
 
-    // Scroll hacia la lista
-    selected.scrollIntoView({
-        behavior: 'smooth'
-    });
+    // Esperar un poco para que el div aparezca antes del scroll
+    setTimeout(() => {
+        selected.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }, 100);
 }
